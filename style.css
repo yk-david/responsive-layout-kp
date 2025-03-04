@@ -1,4 +1,141 @@
-html {
-  height: 100%;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/*======== 
+typography
+=========*/
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.nav ul a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
   width: 100%;
 }
+
+p {
+  font-size: 1.2rem;
+}
+
+.cta-btn {
+  background: #a59678;
+  padding: 0.2em 1em;
+  border-radius: 100px;
+}
+
+.cta-btn:active {
+  opacity: 0.7;
+}
+
+/*=====
+layout 
+======*/
+.header,
+section {
+  padding-block: 2.5em;
+}
+
+.header {
+  background: #2e323f;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo,
+.header a {
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-decoration: green wavy underline;
+  margin-bottom: 1em;
+}
+
+.header .nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+}
+
+.header .nav ul li {
+  font-size: 1.2rem;
+}
+
+/* hero section */
+section.hero {
+  margin: 0 auto;
+  color: #fff;
+  background: #3b4050;
+}
+
+section.hero h1.hero-title {
+  letter-spacing: 0.5px;
+  line-height: 1.1;
+  font-size: 2.2rem;
+  margin-top: 0;
+}
+
+section.hero a.cta-btn {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 0.7em 1.4em;
+}
+
+/* three cols section */
+section.advantages {
+  background: #fff;
+}
+
+section.advantages .row {
+  margin: 0 auto;
+  padding: 1.5em 0;
+}
+
+section.advantages h3 {
+  font-size: 1.2rem;
+  color: #a59678;
+}
+
+/* article */
+article.main {
+  margin: 0 auto;
+}
+
+/*=======
+utility */
+.make-text-gold__title {
+  color: #a59678;
+}
+
+.row-width-90 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* media query */
+@media (min-width: 700px) {}
+
+@media (min-width: 1000px) {}
