@@ -6,6 +6,7 @@
 
 body {
   margin: 0;
+  font-family: 'Montserrat', serif;
 }
 
 /*======== 
@@ -25,8 +26,14 @@ img {
   width: 100%;
 }
 
+.heading {
+  font-family: 'Oswald', sans-serif;
+}
+
 p {
   font-size: 1.2rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
 }
 
 .cta-btn {
@@ -49,7 +56,6 @@ section {
 
 .header {
   background: #2e323f;
-  font-family: "Oswald", sans-serif;
   font-weight: 400;
   display: flex;
   flex-direction: column;
@@ -106,7 +112,7 @@ section.hero a.cta-btn {
 
 /* three cols section */
 section.advantages {
-  background: #fff;
+  background: #f1f1f1;
 }
 
 section.advantages .row {
@@ -115,13 +121,55 @@ section.advantages .row {
 }
 
 section.advantages h3 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #a59678;
+  margin-top: 0;
+}
+
+section.advantages .col:nth-of-type(3) p {
+  margin-bottom: 0;
 }
 
 /* article */
-article.main {
-  margin: 0 auto;
+.article-main h3 {
+  margin-top: 0;
+  color: #a59678;
+  font-size: 1.5rem;
+}
+
+/* aside */
+aside .row-width-90 div {
+  background: #3b4050;
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+}
+
+aside h4 {
+  font-size: 1.2rem;
+}
+
+aside p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+aside .row-width-90 div:nth-of-type(3) p {
+  padding-top: 2em;
+}
+
+.footer {
+  background: #3b4050;
+  color: #b2b5bd;
+}
+
+.footer h5 {
+  color: #a59678;
+}
+
+.footer a {
+  color: #b2b5bd;
 }
 
 /*=======
