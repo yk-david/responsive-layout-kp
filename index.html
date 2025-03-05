@@ -19,8 +19,13 @@
   <div class="website">
     <!-- Header -->
     <header class="header">
-      <span class="logo">CRL</span>
-      <nav class="nav">
+      <button class="nav-toggle" aria-label='open navigation'>
+        <span class="hamberger"></span>
+      </button>
+      <a href="#" class='logo'>
+        <img src="./logo.svg" alt="conquering responsive layouts">
+      </a>
+      <nav class="nav nav-hidden">
         <ul>
           <li><a href="">HOME</a></li>
           <li><a href="">ABOUT</a></li>
@@ -126,7 +131,7 @@
         </aside>
       </section>
     </main>
-
+    <!-- Footer -->
     <footer class="footer">
       <h2 class="footer-title heading">Just scratching the surface</h2>
       <div class="row">
@@ -169,6 +174,7 @@
       </div>
     </footer>
   </div>
+  <script src='./script.js'></script>
 </body>
 
 </html>
