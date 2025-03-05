@@ -56,7 +56,7 @@ section {
 .header {
   background: #2e323f;
   font-weight: 400;
-  padding-block: 0.7em;
+  padding-block: 1.2em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -74,8 +74,8 @@ section {
 .header .nav-toggle {
   cursor: pointer;
   border: 0;
-  width: 3em;
-  height: 3em;
+  width: 3.5em;
+  height: 3.5em;
   padding: 0;
   border-radius: 50%;
   background: #a59678;
