@@ -56,10 +56,19 @@ section {
 .header {
   background: #2e323f;
   font-weight: 400;
+  padding-block: 0.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.minimal-nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.7em 1.5em;
+  width: 100%;
 }
 
 .header .nav-toggle {
@@ -72,7 +81,9 @@ section {
   background: #a59678;
   color: #fff;
   transition: opacity 250ms ease;
-  margin-right: auto;
+  position: absolute;
+  left: 1em;
+  /* margin-right: auto; */
 }
 
 .header .nav-toggle:hover,
@@ -112,7 +123,7 @@ section {
 }
 
 .header .logo {
-  margin-right: auto;
+
 }
 
 .header .nav ul {

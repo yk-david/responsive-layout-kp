@@ -1,7 +1,6 @@
-document.querySelector('.nav-toggle').addEventListener('click', (e) => {
-  e.preventDefault(); // Prevent the default action on click
+document.querySelector('.nav-toggle').addEventListener('click', () => {
   try {
-    console.log('clicked!'); // Log click event
+    document.querySelector('.nav').classList.toggle('nav-hidden');
   } catch (error) {
     console.error('Something goes wrong...'); // Log any error
   }
