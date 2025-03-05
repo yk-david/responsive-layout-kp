@@ -49,11 +49,16 @@ p {
 /*=====
 layout 
 ======*/
+.website {
+  position: relative;
+}
+
 section {
   padding-block: 2.5em;
 }
 
 .header {
+  width: 100%;
   background: #2e323f;
   font-weight: 400;
   padding-block: 1.2em;
@@ -61,7 +66,9 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  position: relative;
+  position: fixed;
+  /* left: 0; */
+  top: 0;
 }
 
 .minimal-nav {
@@ -123,7 +130,6 @@ section {
 }
 
 .header .logo {
-
 }
 
 .header .nav ul {
@@ -138,6 +144,11 @@ section {
 }
 
 /* hero section */
+.main {
+  padding-top: 1.2em;
+  /* I NEED TO MAKE SPACING UPPERSIDE TO FIT WITH HEADER!! */
+}
+
 section.hero {
   margin: 0 auto;
   color: #fff;
