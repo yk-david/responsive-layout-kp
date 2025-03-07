@@ -7,11 +7,10 @@ document.querySelector('.nav-toggle').addEventListener('click', () => {
   }
 });
 
-// Control navigation opacity when scroll
-window.addEventListener('scroll', () => {
+function handleScroll() {
   const header = document.querySelector('header');
-  let isScrolling; 
-  
+  let isScrolling;
+
   header.style.opacity = '0.85';
 
   // Clear previous timeout to prevent flickering
@@ -21,4 +20,8 @@ window.addEventListener('scroll', () => {
   isScrolling = setTimeout(() => {
     header.style.opacity = '1';
   }, 200); // 200ms delay after scroll stops
-});
+}
+
+// Control navigation opacity when scroll
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('touchmove', handleScroll);
