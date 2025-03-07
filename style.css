@@ -129,8 +129,6 @@ section {
   color: #fff;
 }
 
-.header .logo {}
-
 .header .nav ul {
   display: flex;
   flex-direction: column;
