@@ -141,11 +141,6 @@ section {
 }
 
 /* hero section */
-.main {
-  /* padding-top: 1.2em; */
-  /* I NEED TO MAKE SPACING UPPERSIDE TO FIT WITH HEADER!! */
-}
-
 section.hero {
   margin: 0 auto;
   color: #fff;
@@ -192,6 +187,10 @@ section.advantages .col:nth-of-type(3) p {
 }
 
 /* article */
+.article {
+  padding-bottom: 0;
+}
+
 .article-main h3 {
   margin-top: 0;
   color: #a59678;
@@ -199,12 +198,19 @@ section.advantages .col:nth-of-type(3) p {
 }
 
 /* aside */
-aside .row-width-90 div {
+aside .row-width-90 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+aside .aside-container {
   background: #3b4050;
   color: #fff;
   text-align: center;
-  padding: 0.5em 1em;
-  margin-bottom: 1em;
+  padding: 0 1em;
+  margin-bottom: 2em;
 }
 
 aside h4 {
@@ -223,20 +229,32 @@ aside .row-width-90 div:nth-of-type(3) p {
 .footer {
   background: #3b4050;
   color: #b2b5bd;
+  padding-block: 1.5em;
+  /* padding-inline: 1em; */
 }
 
 .footer h2 {
   color: #fff;
   text-align: center;
+  margin-top: 0;
 }
 
 .footer h5 {
   color: #a59678;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+.footer p, 
+.footer a {
+  font-size: 0.9rem;
 }
 
 .footer a {
   color: #b2b5bd;
+}
+
+.footer .nav li {
+  margin-bottom: 1em;
 }
 
 .footer .nav:nth-of-type(3) ul {
