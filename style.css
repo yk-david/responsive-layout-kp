@@ -40,6 +40,7 @@ p {
   background: #a59678;
   padding: 0.2em 1em;
   border-radius: 100px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .cta-btn:active {
@@ -51,6 +52,8 @@ layout
 ======*/
 .website {
   position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 section {
@@ -60,6 +63,7 @@ section {
 .header {
   width: 100%;
   background: #2e323f;
+  font-family: 'Oswald', sans-serif;
   font-weight: 400;
   padding-block: 1.2em;
   display: flex;
@@ -67,7 +71,6 @@ section {
   align-items: center;
   justify-content: center;
   position: sticky;
-  /* left: 0; */
   top: 0;
 }
 
@@ -76,6 +79,7 @@ section {
   justify-content: center;
   align-items: center;
   width: 100%;
+  border: 1px solid red;
 }
 
 .header .nav-toggle {
@@ -90,7 +94,7 @@ section {
   transition: opacity 250ms ease;
   position: absolute;
   left: 1em;
-  /* margin-right: auto; */
+  top: 15%;
 }
 
 .header .nav-toggle:hover,
@@ -230,7 +234,6 @@ aside .row-width-90 div:nth-of-type(3) p {
   background: #3b4050;
   color: #b2b5bd;
   padding-block: 1.5em;
-  /* padding-inline: 1em; */
 }
 
 .footer h2 {
@@ -244,7 +247,7 @@ aside .row-width-90 div:nth-of-type(3) p {
   font-size: 1.2rem;
 }
 
-.footer p, 
+.footer p,
 .footer a {
   font-size: 0.9rem;
 }
@@ -277,6 +280,143 @@ utility */
 }
 
 /* media query */
-@media (min-width: 700px) {}
+@media (min-width: 700px) {
+  .article-aside .row-width-90 {
+    flex-direction: row;
+    gap: 1.5em;
+    align-items: unset;
+  }
 
-@media (min-width: 1000px) {}
+  .article-aside .aside-container {
+    padding-inline: 1.5em;
+  }
+
+  .footer .about-our-company {
+    width: 100%;
+  }
+
+  .footer .nav-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1000px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 5%;
+  }
+
+  .header .minimal-nav {
+    display: none;
+  }
+
+  .header .nav-hidden {
+    display: block;
+  }
+
+  .header .nav-hidden ul {
+    flex-direction: row;
+  }
+
+  .header .nav-hidden ul li {
+    margin-left: 1em;
+  }
+
+  .header .nav-hidden ul li:hover,
+  .header .nav-hidden ul li:focus {
+    opacity: 0.5;
+  }
+
+  .hero {
+    padding-block: 9em;
+  }
+
+  .main .row-width-90 {
+    display: flex;
+  }
+
+  .main .row-width-90 .col.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: flex-end;
+  }
+
+  section.hero a.cta-btn {
+    width: 50%;
+    margin: unset;
+    font-size: 1.5rem;
+    padding: 0.3em 1.2em;
+  }
+
+  section.hero h1.hero-title {
+    font-size: 5.625rem;
+    margin-bottom: 0;
+  }
+
+  section.advantages .row-width-90 {
+    gap: 1.5em;
+  }
+
+  section.advantages h3 {
+    font-size: 1.8rem;
+  }
+
+  .article {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-block: 3em;
+  }
+
+  .article .article-main {
+    width: 55%;
+  }
+
+  .article-main .row-width-90 {
+    flex-direction: column;
+  }
+
+  .article-main h3 {
+    font-size: 2.2rem;
+  }
+
+  
+  .article .article-aside {
+    width: 35%;
+  }
+
+  .article-aside .row-width-90 {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .article-aside .aside-container {
+    margin-bottom: 0;
+    padding-bottom: 1em;
+  }
+
+  .footer h2.footer-title {
+    font-size: 3rem;
+  }
+
+  .footer .row-width-90 {
+    display: flex;
+    justify-content: space-around;
+    gap: 2em;
+  }
+
+  .footer h5 {
+    font-size: 1.5rem;
+  }
+
+  .footer .about-our-company {
+    width: 35%;
+  }
+
+  .footer .nav-container {
+    width: 55%;
+  }
+}
